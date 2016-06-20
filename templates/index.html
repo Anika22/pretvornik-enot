@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Unit converter</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Hello metric to US standard unit conversion needer!</h1>
+    <p>Please type in the amount and set the unit you need converted to what unit:</p>
+
+        <form method="post" action="/">
+            <p>Convert: </p>
+            <input name="value_1">
+            <select name="unit_1">
+                <option value="milimeter">Milimeter</option>
+                <option value="centimeter">Centimeter</option>
+                <option value="meter">Meter</option>
+                <option value="kilometer">Kilometer</option>
+            </select>
+            <p> to: </p>
+            <select name="unit_2">
+                <option value="inch">Inch</option>
+                <option value="foot">Foot</option>
+                <option value="yard">Yard</option>
+                <option value="mile">Mile</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+
+    <p>Here is your converted unit: {{ converted }}</p>
+
+</body>
+</html>
